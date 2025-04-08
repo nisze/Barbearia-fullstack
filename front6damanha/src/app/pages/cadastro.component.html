@@ -1,0 +1,16 @@
+<h2 style="text-align: center; font-family: 'Georgia', serif; margin-bottom: 20px;">
+    Cadastro de Cliente
+  </h2>
+  
+  <form  (ngSubmit)="cadastrar()"style = "display: flex; flex-direction: column; align-items: center; gap: 15px;">
+   
+    <input placeholder="Nome"  [(ngModel)]="nome" style ="padding: 10px; border-radius: 8px; border: 1px solid #ccc;" />
+    
+    <input placeholder="Telefone" [(ngModel)]="telefone" style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;" />
+    
+    <input placeholder="E-mail"  [(ngModel)]="email" style="padding: 10px; border-radius: 8px; border: 1px solid #ccc;" />
+    
+    <button type="submit" style="padding: 10px 20px; background-color: #6e4b3a; color: white; border: none; border-radius: 8px; cursor: pointer;">
+      Cadastrar
+    </button>
+  </form>
