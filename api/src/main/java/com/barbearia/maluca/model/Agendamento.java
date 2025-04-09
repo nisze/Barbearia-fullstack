@@ -9,8 +9,9 @@ public class Agendamento {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
+
+    @Column(name = "data_hora")
     private LocalDateTime dataHora;
     private String nome;
 
